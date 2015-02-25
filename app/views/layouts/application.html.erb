@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  		<!-- Title here -->
+		<title>SpectaFresh</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<%= stylesheet_link_tag "bootstrap.min.css" %>
+		<!-- Animate CSS -->
+		<%= stylesheet_link_tag "animate.min.css" %>
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+		<%= stylesheet_link_tag "settings.css" %>
+		<!--[if IE ]><link rel="stylesheet" href="css/settings-ie8.css"><![endif]-->
+		<!-- Portfolio CSS -->
+		<%= stylesheet_link_tag "prettyPhoto.css" %>
+		<!-- Countdown CSS -->
+		<%= stylesheet_link_tag "jquery.countdown.css" %>
+		<!-- Font awesome CSS -->
+		<%= stylesheet_link_tag "font-awesome.min.css" %>
+		<!-- Custom CSS -->
+		<%= stylesheet_link_tag "style.css" %>
+		<!--[if IE]><link rel="stylesheet" href="css/ie-style.css"><![endif]-->
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
