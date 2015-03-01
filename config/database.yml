@@ -9,8 +9,7 @@ default: &default
   encoding: unicode
   username: ajordan510
   password: id080340
-  host:     <%=ENV['IP']%>
-
+  host:    <%=ENV['IP']%>
 
 development:
   <<: *default

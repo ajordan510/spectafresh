@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
+  get 'network/index'
+
+  get 'live/index'
+
   get 'home/index'
 
   resources :users
   root 'home#index'
+  match 'home/login', to: 'home#login', via: 'get'
+  match 'home/register', to: 'home#register', via: 'get'
+  match 'live/index', to: 'live#index', via: 'get'
+  match 'network/index', to: 'network#index', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
