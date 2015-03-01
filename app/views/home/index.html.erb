@@ -145,7 +145,8 @@
 																	<!-- Heading -->
 																	<h4 class="br-yellow"><i class="fa fa-ticket heading-icon"></i> Slightly Belie</h4>
 																	<!-- Image -->
-																	<img src="assets/w2.jpg" class="img-responsive" alt="" />
+																	<!--<img src="assets/w2.jpg" class="img-responsive" alt="" />-->
+																	<%= image_tag "assets/w2.jpg", :class=> "img-responsive" %>
 																	<!-- Paragraph -->
 																	<p>Lorem Ipsum available, but the cool majority have suffered altevable.</p>
 																	<!-- View Next Button -->
@@ -270,7 +271,7 @@
 									data-easing="Power4.easeOut"
 									data-endspeed="300"
 									data-endeasing="Linear.easeNone"
-									data-captionhidden="off"><img src="" class="img-responsive" alt="" />
+									data-captionhidden="off"><%= image_tag "", :class=> "img-responsive" %>
 								</div>
 								<!-- LAYERS NR. 2 -->
 								<div class="tp-caption lfr thinheadline_dark"
@@ -341,7 +342,8 @@
 									data-easing="Power4.easeOut"
 									data-endspeed="300"
 									data-endeasing="Linear.easeNone"
-									data-captionhidden="off"><img src="assets/slider/s31.png" class="img-responsive" alt="" />
+									data-captionhidden="off"><%= image_tag "slider/s31.png", :class=> "img-responsive" %>
+									<!--<img src="assets/slider/s31.png" class="img-responsive" alt="" />-->
 								</div>
 								<!-- LAYERS NR. 2 -->
 								<div class="tp-caption lfl"
@@ -352,7 +354,7 @@
 									data-easing="Power4.easeOut"
 									data-endspeed="300"
 									data-endeasing="Linear.easeNone"
-									data-captionhidden="off"><img src="assets/slider/s32.png" class="img-responsive" alt="" />
+									data-captionhidden="off"><%= image_tag "slider/s32.png", :class=> "img-responsive" %>
 								</div>
 								<!-- LAYERS NR. 3 -->
 								<div class="tp-caption lfl"
@@ -363,7 +365,8 @@
 									data-easing="Power4.easeOut"
 									data-endspeed="300"
 									data-endeasing="Linear.easeNone"
-									data-captionhidden="off"><img src="assets/slider/s33.png" class="img-responsive" alt="" />
+									data-captionhidden="off"><%= image_tag "slider/s33.png", :class=> "img-responsive" %>
+									<!--<img src="assets/slider/s33.png" class="img-responsive" alt="" />-->
 								</div>
 								<!-- LAYERS NR. 4 -->
 								<div class="tp-caption lfl"
@@ -374,7 +377,8 @@
 									data-easing="Power4.easeOut"
 									data-endspeed="300"
 									data-endeasing="Linear.easeNone"
-									data-captionhidden="off"><img src="assets/slider/s34.png" class="img-responsive" alt="" />
+									data-captionhidden="off"><%= image_tag "slider/s34.png", :class=> "img-responsive" %>
+									<!--<img src="assets/slider/s34.png" class="img-responsive" alt="" />-->
 								</div>
 								<!-- LAYERS NR. 5 // -->
 								<div class="tp-caption lfr largegreenbg br-orange"
@@ -556,33 +560,44 @@
 										<!-- Wrapper for slides -->
 										<div class="carousel-inner">
 											<div class="item active">
-												<img src="assets/transparent-md.png" class="img-responsive item-back" alt="" />
+												<!--<img src="assets/transparent-md.png" class="img-responsive item-back" alt="" />-->
+												<%= image_tag "transparent-md.png", :class=> "img-responsive item-back" %>
 												<div class="carousel-caption">
 													<!-- Image -->
 													<!-- Heading -->
-													<h3><img src="assets/terrence.jpg" class="img-responsive" alt="" />Terrence Budnik</h3>
+													<h3>
+														<!--<img src="assets/terrence.jpg" class="img-responsive" alt="" />-->
+														<%= image_tag "terrence.jpg", :class=> "img-responsive" %>
+														Terrence Budnik
+													</h3>
 													<blockquote>
 														<p>This is the first testimonial.  We should come in with a bang on this one.</p>
 													</blockquote>
 												</div>
 											</div>
 											<div class="item">
-												<img src="assets/transparent-md.png" class="img-responsive item-back" alt="" />
+												<%= image_tag "transparent-md.png", :class=> "img-responsive item-back" %>
+												<!--<img src="assets/transparent-md.png" class="img-responsive item-back" alt="" />-->
 												<div class="carousel-caption">
 													<!-- Image -->
 													<!-- Heading -->
-													<h3><img src="assets/john.jpg" class="img-responsive" alt="" />John Jordan</h3>
+													<h3>
+														<%= image_tag "john.jpg", :class=> "img-responsive" %>
+														<!--<img src="assets/john.jpg" class="img-responsive" alt="" />John Jordan</h3>-->
 													<blockquote>
 														<p>This is the second testimonial box.  I hope that somebody says something nice about us so that we can put it here</p>
 													</blockquote>
 												</div>
 											</div>
 											<div class="item">
-												<img src="assets/transparent-md.png" class="img-responsive item-back" alt="" />
+												<!--<img src="assets/transparent-md.png" class="img-responsive item-back" alt="" />-->
+												<%= image_tag "transparent-md.png", :class=> "img-responsive item-back" %>
 												<div class="carousel-caption">
 													<!-- Image -->
 													<!-- Heading -->
-													<h3><img src="assets/user.jpg" class="img-responsive" alt="" />Jen Jones</h3>
+													<h3>
+														<%= image_tag "user.jpg", :class=> "img-responsive" %>
+														<!--<img src="assets/user.jpg" class="img-responsive" alt="" />Jen Jones</h3>-->
 													<blockquote>
 														<p>This is the third testimonial.  Here we could put a testimonial from somebody with a small little headshot.</p>
 													</blockquote>
