@@ -1,3 +1,12 @@
+.br-custom-black{
+	background: rgba(0, 0, 0, 1.0) !important;
+
+}
+
+.slide-logo{
+	height: 200px;
+}
+
 .fancy-list{
 	list-style-type:none;
 	padding-left: 0;
