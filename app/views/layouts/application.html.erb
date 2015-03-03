@@ -34,8 +34,483 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<!-- Body Wrapper -->
+<div class="wrapper white">
+		
+<!-- Header Start -->
+			<div class="header">
+				<!-- Header Information -->
+				<div class="header-info">
+					<div class="container">
+						<div class="row">
+							<!-- ONE THIRD WIDTH SOCIAL MEDIA -->
+							<div class="col-md-4 col-sm-4">
+								<!-- Social Media -->
+								<div class="social">
+									<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+									<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+								<!--	<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a> -->
+								<!--	<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+								</div>
+							</div>
+							<!-- ONE THID WIDTH BLANK? -->
+							<div class="col-md-4 col-sm-4">
+								<!-- Search Box -->
+								<!--<div class="search">-->
+								<!--	<form>-->
+								<!--		<div class="input-group">-->
+								<!--			<input type="text" class="form-control" placeholder="Text to search">-->
+								<!--			<span class="input-group-btn">-->
+								<!--				<button class="btn" type="button"><i class="fa fa-search"></i></button>-->
+								<!--			</span>-->
+								<!--		</div>-->
+								<!--	</form>-->
+								<!--</div>-->
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="login-header">
+								<h3>
+									<span><a class="login-header-text" href="/home/login.html"> Log In</a></span>
+									<span><a class="login-header-text" href="#"> Sign Up</a></span>
+								</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Header Navigation -->
+				<div class="header-navigation">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4">
+								<!-- Logo -->
+								<div class="logo">
+									<!-- Heading -->
+									<h1>
+										<a href="index.html">
+										<% if controller_name == "network" %>
+											<i class="fa fa-group br-red"></i>
+											Fresh Networks
+										<% elsif controller_name == "live" %>
+											<i class="fa fa-video-camera br-red"></i>
+											Fresh Live
+										<% elsif controller_name == "production" %>
+										<i class="fa fa-film br-lblue"></i>
+											Fresh Productions
+										<% else %>
+										<i class="fa fa-microphone br-red"></i>
+											SpectaFresh
+										<% end %>
+										</a>
+									</h1>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<!-- Bootstrap Navbar -->
+								<nav class="navbar navbar-default" role="navigation">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle br-orange" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav navbar-right">
+											<!--<li>-->
+											<!--	<a href="index.html" class="br-orange">-->
+													<!-- Link Icon -->
+											<!--		<i class="fa fa-home link-icon"></i>-->
+													<!-- Link Title -->
+											<!--		<span class="link-title">Home</span>-->
+											<!--	</a>-->
+											<!--</li>-->
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle br-red" data-toggle="dropdown">
+													<!-- Link Icon -->
+													<i class="fa fa-video-camera link-video-camera"></i>
+													<!-- Link Title -->
+													<span class="link-title">Live! <b class="fa fa-angle-down"></b></span> 
+												</a>
+												<ul class="dropdown-menu dropdown-sm">
+													<li>
+														<div class="row">
+															<div class="col-md-6">
+																<div class="col-inner col-disable">
+																	<h4 class="br-orange"><i class="fa fa-share heading-icon"></i> Go Live Now!</h4>
+																	<p>Add in the schedule here if possible; disable the go live now button if there are no performers and maybe place an explanation here</p>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="col-inner">
+																	<ul class="list-unstyled">
+																		<li><a href="coming-soon.html"><i class="fa fa-arrow-right dd-link-icon"></i> Schedule</a></li>
+																		<li><a href="feature.html"><i class="fa fa-arrow-right dd-link-icon"></i> Rankings</a></li>
+																		<li><a href="gallery.html"><i class="fa fa-arrow-right dd-link-icon"></i> News</a></li>
+																		<li><a href="login.html"><i class="fa fa-arrow-right dd-link-icon"></i> Login</a></li>
+																		<li><a href="login.html"><i class="fa fa-arrow-right dd-link-icon"></i> Register</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle br-pink" data-toggle="dropdown">
+													<!-- Link Icon -->
+													<i class="fa fa-group link-icon"></i>
+													<!-- Link Title -->
+													<span class="link-title">Networks <b class="fa fa-angle-down"></b></span> 
+												</a>
+												<ul class="dropdown-menu dropdown-default">
+													<li><a href="careers.html"><i class="fa fa-arrow-right dd-link-icon pink"></i> Log In</a></li>
+													<li><a href="faq.html"><i class="fa fa-arrow-right dd-link-icon pink"></i> Sign Up</a></li>
+													<li><a href="sitemap.html"><i class="fa fa-arrow-right dd-link-icon pink"></i> Los Angeles</a></li>
+													<li><a href="time-line.html"><i class="fa fa-arrow-right dd-link-icon pink"></i> FAQ</a></li>
+												</ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle br-lblue" data-toggle="dropdown">
+													<!-- Link Icon -->
+													<i class="fa fa-film link-icon"></i>
+													<!-- Link Title -->
+													<span class="link-title">Production <b class="fa fa-angle-down"></b></span> 
+												</a>
+												<ul class="dropdown-menu dropdown-md">
+													<li>
+														<div class="row">
+															<div class="col-md-4">
+																<div class="col-inner col-disable">
+																	<!-- Heading -->
+																	<h4 class="br-green"><i class="fa fa-filter heading-icon"></i> Varsa Oukes</h4>
+																	<!-- Paragraph -->
+																	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui app blanditiis praesentium voluptatum deleniti atque corrupti quos pain dolores et quas molesti as excet pturi sint occaecati cupiditate non provident.</p>
+																</div>
+															</div>
+															<div class="col-md-4">
+																<div class="col-inner col-disable">
+																	<!-- Heading -->
+																	<h4 class="br-yellow"><i class="fa fa-ticket heading-icon"></i> Slightly Belie</h4>
+																	<!-- Image -->
+																	<!--<img src="assets/w2.jpg" class="img-responsive" alt="" />-->
+																	<%= image_tag "w2.jpg", :class=> "img-responsive" %>
+																	<!-- Paragraph -->
+																	<p>Lorem Ipsum available, but the cool majority have suffered altevable.</p>
+																	<!-- View Next Button -->
+																	<div class="view-button">
+																		<a href="#" class="btn btn-danger btn-sm">View More <i class="fa fa-angle-right"></i></a>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-4">
+																<div class="col-inner">
+																	<ul class="list-unstyled">
+																		<li><a href="blog.html"><i class="fa fa-arrow-right dd-link-icon"></i> Featured Artist</a></li>
+																		<li><a href="blog-single.html"><i class="fa fa-arrow-right dd-link-icon"></i> Testimonials</a></li>
+																		<li><a href="portfolio.html"><i class="fa fa-arrow-right dd-link-icon"></i> SF Events</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="aboutus.html" class="br-red">
+													<!-- Link Icon -->
+													<i class="fa fa-user link-icon"></i>
+													<!-- Link Title -->
+													<span class="link-title">About</span>
+												</a>
+											</li>
+											<li>
+												<a href="contact.html" class="br-yellow">
+													<!-- Link Icon -->
+													<i class="fa fa-phone link-icon"></i>
+													<!-- Link Title -->
+													<span class="link-title">Contact</span>
+												</a>
+											</li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Header End -->
 <%= yield %>
 
+<!-- Footer Start -->
+			
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer Widget -->
+							<div class="footer-widget">
+								<!-- Logo Icon -->
+								<!-- Heading -->
+								<h2><a href="index.html"><i class="fa fa-microphone logo-icon br-red"></i> FlatMania</a></h2>
+								<!-- Paragraph -->
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form believable.</p>
+								<!-- Social Media -->
+								<div class="social">
+									<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+									<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+									<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+									<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer Widget -->
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h5><i class="fa fa-plus br-red"></i> Navigation Menu</h5>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<!-- Menu Icons link -->
+										<ul class="list-unstyled">
+											<li><a href="#"><i class="fa fa-home br-red"></i> Home</a></li>
+											<li><a href="#"><i class="fa fa-book br-yellow"></i> Live!</a></li>
+											<li><a href="#"><i class="fa fa-phone br-green"></i> Networks</a></li>
+											<li><a href="#"><i class="fa fa-gear br-lblue"></i> Productions</a></li>
+											<li><a href="#"><i class="fa fa-comment br-purple"></i> About Us</a></li>
+										</ul>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<!-- Menu Icons link -->
+										<ul class="list-unstyled">
+											<li><a href="#"><i class="fa fa-check br-green"></i> Features</a></li>
+											<li><a href="#"><i class="fa fa-search br-pink"></i> Coming Soon</a></li>
+											<li><a href="#"><i class="fa fa-user br-orange"></i> About Us</a></li>
+											<li><a href="#"><i class="fa fa-sign-in br-red"></i> Register</a></li>
+											<li><a href="#"><i class="fa fa-file br-blue"></i> Recent News</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix visible-sm"></div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer Widget -->
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h5><i class="fa fa-map-marker br-yellow"></i> Contact Us</h5>
+								<address>
+									<i class="fa fa-home br-green"></i> #98/3 Dark Politic Road, N B C <br />
+									&nbsp; &nbsp; &nbsp; &nbsp; Venue, 6th Main, USD Park,  <br />
+									&nbsp; &nbsp; &nbsp; &nbsp; Bangalore - 234543 <br />
+									<span><i class="fa fa-phone br-orange"></i> 847 987 8539</span>
+									<span><i class="fa fa-envelope-o br-blue"></i> <a href="#">support@spectafresh.com</a></span>
+								</address>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer Widget -->
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h5><i class="fa fa-location-arrow br-lblue"></i> Location</h5>
+								<!-- Google Map -->
+								<div class="map">
+									<!-- Image -->
+									<!--<img src="assets/map.png" class="img-responsive" alt="" />-->
+									<%= image_tag "map.png", :class=> "img-responsive" %>
+									<!-- Map Marker -->
+									<i class="fa fa-map-marker marker india lblue"></i>
+									<i class="fa fa-map-marker marker usa orange"></i>
+									<i class="fa fa-map-marker marker africa green"></i>
+								</div>
+								<span class="location-name">
+									<i class="fa fa-map-marker br-lblue"></i> India &nbsp;&nbsp;
+									<i class="fa fa-map-marker br-orange"></i> USA &nbsp;&nbsp;
+									<i class="fa fa-map-marker br-green"></i> Africa
+								</span>
+							</div>
+						</div>
+					</div>
+					<!-- Footer Copyright -->
+					<div class="footer-copyright">
+						<p>&copy; Copyright 2015 <a href="#">SpectaFresh</a></p>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+					<!-- Javascript files -->
+		<!-- jQuery -->
+		<%= javascript_include_tag "jquery.js" %>
+		<!-- Bootstrap JS -->
+		<%= javascript_include_tag "bootstrap.min.js" %>
+		<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+		<!--<script type="text/javascript" src="assets/jquery.themepunch.plugins.min.js"></script>-->
+		<%= javascript_include_tag "jquery.themepunch.plugins.min.js" %>
+		<!--<script type="text/javascript" src="assets/jquery.themepunch.revolution.min.js"></script>-->
+		<%= javascript_include_tag "jquery.themepunch.revolution.min.js" %>
+		<%= javascript_include_tag "jquery.plugin.min.js" %>
+		<!-- Masonry JS -->
+		<!--<script src="assets/masonry.pkgd.min.js"></script>-->
+		<%= javascript_include_tag "masonry.pkgd.min.js" %>
+		<!--<script src="assets/imagesloaded.pkgd.min.js"></script>-->
+		<%= javascript_include_tag "imagesloaded.pkgd.min.js" %>
+		<!-- Cycle JS -->
+		<!--<script type="text/javascript" src="assets/jquery.cycle.all.js"></script>-->
+		<%= javascript_include_tag "jquery.cycle.all.js" %>
+		<!-- jQuery flot -->
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="assets/excanvas.min.js"></script><![endif]-->
+		<%= javascript_include_tag "excanvas.min.js" %>
+		<!--<script src="assets/jquery.flot.min.js"></script>     -->
+		<%= javascript_include_tag "jquery.flot.min.js" %>
+		<!--<script src="assets/jquery.flot.resize.min.js"></script>-->
+		<%= javascript_include_tag "jquery.flot.resize.min.js" %>
+		<!-- Count To JS  -->
+		<!--<script src="assets/jquery.countTo.js"></script>-->
+		<%= javascript_include_tag "jquery.countTo.js" %>
+		<!-- jQuery way points -->
+		<!--<script src="assets/waypoints.min.js"></script>-->
+		<%= javascript_include_tag "waypoints.min.js" %>
+		<!-- jQuery prettyPhoto & Isotope -->
+		<!--<script src="assets/jquery.prettyPhoto.js"></script>-->
+		<%= javascript_include_tag "jquery.prettyPhoto.js" %>
+		<!--<script src="assets/isotope.js"></script>-->
+		<%= javascript_include_tag "isotope.js" %>
+		<!-- Jquery for Countdown  -->
+		<!--<script type="text/javascript" src="assets/jquery.countdown.min.js"></script>-->
+		<%= javascript_include_tag "jquery.countdown.min.js" %>
+		<!-- Respond JS for IE8 -->
+		<!--<script src="assets/respond.min.js"></script>-->
+		<%= javascript_include_tag "respond.min.js" %>
+		<!-- HTML5 Support for IE -->
+		<!--<script src="assets/html5shiv.js"></script>-->
+		<%= javascript_include_tag "html5shiv.js" %>
+		<!-- Custom JS -->
+		<!--<script src="assets/custom.js"></script>-->
+		<%= javascript_include_tag "custom.js" %>
+		<!-- This Page JavaScript -->
+		<%= javascript_include_tag "flipper.js" %>
+		<script type="text/javascript" >
+		
+			// SLIDER REVOLUTION Java Script
+				jQuery(document).ready(function() {
+					   jQuery('.tp-banner').revolution(
+						{
+							delay:9000,
+							startheight:500,
+							
+							hideThumbs:10,
+							
+							navigationType:"none",	
+							
+							
+							hideArrowsOnMobile:"on",
+							
+							touchenabled:"on",
+							onHoverStop:"on",
+							
+							navOffsetHorizontal:0,
+							navOffsetVertical:20,
+							
+							stopAtSlide:-1,
+							stopAfterLoops:-1,
+
+							shadow:0,
+							
+							fullWidth:"on",
+							fullScreen:"off"
+						});
+				});
+			
+			// Cycle Slide Js 
+			
+				$('#box-slider-one').cycle({ 
+					fx:    'uncover',  
+					speed:    200, 
+					timeout:  2500 
+				});
+			
+			/* ******************************************** */
+			/* plot js */
+			/* *************************************** */  
+					
+				$(function() {
+					/* Chart data #1 */
+					var d1 = [[0, 0], [1, 1.5], [2, 3.2], [3, 4.1],[4, 5.1], [5, 5], [6, 5.3], [7, 6],[8, 6.3], [9, 7], [10, 7.5], [11, 8]];
+
+					var options = {
+						series: {
+						  lines: {
+							 show: true, fill: false, lineWidth:1
+						  },
+						  points: {
+							 show: true, fill: true, lineWidth:2, radius:3, fillColor: "#fff"
+						  },
+						  shadowSize: 0
+					   },
+						colors :["#fff"],
+					   grid: {
+						  hoverable: true, color: "#fff", backgroundColor:null ,borderWidth:0, borderColor:"#fff", labelMargin:10
+					   },
+					   xaxis: {
+						  ticks: 10,
+						  font: {
+								size: 12,
+								color: ["#fff"]
+							}
+					   },
+					   yaxis: {
+						  ticks: 5,
+						  font: {
+								size: 12,
+								color: ["#fff"]
+							}
+					   }, 
+					   legend: {
+						  backgroundOpacity:0,
+						  noColumns:2,
+						  labelBoxBorderColor: null
+					   }
+					};
+					
+					$("<div id='tooltip'></div>").css({
+						position: "absolute",
+						display: "none",
+						"border-radius":"1px",
+						padding: "4px 5px",
+						color:"#999",
+						"font-size":"11px",
+						"background-color": "#fff",
+						"border":"1px solid #ccc",
+						"z-index": "20"
+					}).appendTo("body");
+
+					$(".plot-chart").bind("plothover", function (event, pos, item) {
+							if (item) {
+								var x = item.datapoint[0].toFixed(2),
+									y = item.datapoint[1].toFixed(2);
+
+								$("#tooltip").html(x + ", " + y)
+									.css({top: item.pageY+5, left: item.pageX+5})
+									.fadeIn(200);
+							} else {
+								$("#tooltip").hide();
+							}
+					});
+
+					$.plot(".plot-chart", [ {data: d1,  label: "Revenue"} ], options);
+				});
+				
+			// Type your codde here
+		</script>
+
+			
+			
 </body>
 </html>

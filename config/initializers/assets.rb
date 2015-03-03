@@ -13,7 +13,8 @@ Rails.application.config.assets.precompile += %w( prettyPhoto.css )
 Rails.application.config.assets.precompile += %w( font-awesome.min.css )
 Rails.application.config.assets.precompile += %w( jquery.countdown.css )
 Rails.application.config.assets.precompile += %w( style.css )
-
+Rails.application.config.assets.precompile += %w( jquery.plugin.min.js )
+Rails.application.config.assets.precompile += %w( excanvas.min.js )
 Rails.application.config.assets.precompile += %w( jquery.js )
 Rails.application.config.assets.precompile += %w( bootstrap.min.js )
 Rails.application.config.assets.precompile += %w( jquery.cycle.all.js )
@@ -31,7 +32,7 @@ Rails.application.config.assets.precompile += %w( jquery.countdown.min.js )
 Rails.application.config.assets.precompile += %w( respond.min.js )
 Rails.application.config.assets.precompile += %w( html5shiv.js )
 Rails.application.config.assets.precompile += %w( custom.js )
-
+Rails.application.config.assets.precompile += %w( flipper.js )
 
 
 
