@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   match 'home/register', to: 'home#register', via: 'get'
   match 'live/index', to: 'live#index', via: 'get'
   match 'network/index', to: 'network#index', via: 'get'
+  match 'live/performer', to: 'live#performer', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -6,6 +6,7 @@ Rails.application.config.assets.initialize_on_precompile = false
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( RTCMultiConnection.js )
 Rails.application.config.assets.precompile += %w( bootstrap.min.scss.css )
 Rails.application.config.assets.precompile += %w( animate.min.scss.css )
 Rails.application.config.assets.precompile += %w( settings.css )

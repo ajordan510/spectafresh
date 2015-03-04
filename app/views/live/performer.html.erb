@@ -1,0 +1,129 @@
+<!-- WEB_RTC CONNECTION SETUP -->
+
+<script src="//cdn.webrtc-experiment.com/RTCMultiConnection.js"></script>
+
+
+<!-- END OF THE WEB-RTC CONNECTION SETUP -->
+	
+	
+			<!-- Inner Page Content // Start -->
+			
+			<div class="inner-page">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<!-- Inner Page Content Sidebar -->
+							<div class="page-sidebar">
+								<!-- Page Title -->
+								<div class="page-title br-blue">
+									<!-- Inner Page Title // Heading -->
+									<h2>Number </h2>
+									<!-- Paragraph -->
+									<p>Show some statistics below</p>
+									<ul>
+									    <li> Number of people watching</li>
+									    <li> Time remaining?</li>
+									    <li> Show 3</li>
+									</ul>
+								</div>
+								<div>
+								    
+								</div>
+								<div class="page-title br-red" style="margin-top: 10px !important">
+									<!-- Inner Page Title // Heading -->
+									<h2>Stats 2?</h2>
+									<!-- Paragraph -->
+									<ul>
+									    <li> number of likes</li>
+									</ul>
+								</div>
+
+								<div class="page-title br-purple" style="margin-top: 10px !important">
+									<!-- Inner Page Title // Heading -->
+									<h4> 5:00 Remaining</h4>
+								</div>
+
+							</div>
+						</div>
+						<!-- Main-bar Column -->
+						<div class="col-md-9">
+							<div class="page-mainbar service">
+								<!-- Heading -->
+								<h3>Performer </h3>
+								<!-- Service Page Content -->
+								<div class="service-content">
+									<div class="row">
+										<div class="col-md-12 col-sm-12">
+												<div class="performer-window" id="performer-window">
+													<div class="round-button round-button-container" id="broadcast-button">
+														<div class="round-button-circle">
+															<a id="openNewSessionButton" class="round-button">Start Broadcast</a>
+														</div>
+													</div>
+												</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6 col-sm-6">
+											<!-- Icon -->
+											<a href="#"><i class="fa fa-laptop br-blue"></i></a>
+											<!-- Heading -->
+											<h4>Not working?</h4>
+											<!-- Paragraph -->
+											<p>Praesidium voluptuary lenitive antique corrupts quotas do lores et quasi molests exception saint evocative cupidity non provident similitude sun in culpa quid officio desertion militia animi, id est laborum et dolorum fuga. </p>
+											<div class="clearfix"></div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<!-- Icon -->
+											<a href="#"><i class="fa fa-star br-lblue"></i></a>
+											<!-- Heading -->
+											<h4>Options</h4>
+											<!-- Paragraph -->
+											<p>Here we could put stuff like black out screen, include chear noices, etc </p>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Inner Page Content // End -->
+			
+			
+		<span class="totop"><a href="#"><i class="fa fa-angle-up"></i></a></span> 
+
+		
+
+<script>
+	var connection = new RTCMultiConnection();
+	
+	// easiest way to customize what you need!
+	connection.session = {
+	    audio: true,
+	    video: true
+	};
+	
+	connection.direction = 'one-to-many';
+	connection.body = document.querySelector('.performer-menu');
+	// on getting local or remote media stream
+	connection.onstream = function(e) {
+	    document.getElementById("performer-window").appendChild(e.mediaElement);
+	};
+	
+	// setup signaling channel
+	connection.connect();
+
+	// open new session
+	document.querySelector('#openNewSessionButton').onclick = function() {
+	    connection.open();
+	    document.getElementById('broadcast-button').style.display = "none";
+	    document.getElementById('performer-window').style.backgroundColor = "inherit";
+	}
+	
+	
+
+</script>
