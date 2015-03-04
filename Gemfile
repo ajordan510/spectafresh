@@ -44,4 +44,6 @@ gem 'sass-rails', '>= 3.2'
 gem 'autoprefixer-rails'
 gem 'rails_12factor', group: :production
 gem 'newrelic_rpm' 
+gem 'execjs'
+gem 'therubyracer'
 # -----------------------
