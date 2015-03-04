@@ -1,1 +1,0 @@
-!function(){function e(e){e.addEventListener("click",function(){var e=this.classList;e.contains("flipped")===!0?e.remove("flipped"):e.add("flipped")})}for(var c=document.querySelectorAll(".card.effect__click"),i=0,n=c.length;n>i;i++){var t=c[i];e(t)}}();
