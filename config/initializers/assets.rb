@@ -6,11 +6,10 @@ Rails.application.config.assets.initialize_on_precompile = false
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
-Rails.application.config.assets.precompile += %w( style2.css )
+
 Rails.application.config.assets.precompile += %w( bootstrap.min.scss.css )
 Rails.application.config.assets.precompile += %w( animate.min.scss.css )
 Rails.application.config.assets.precompile += %w( settings.css )
-Rails.application.config.assets.precompile += %w( style2.scss.css ) #originally didnt have the scss and it wasnt found when pushed to production...
 Rails.application.config.assets.precompile += %w( style.css )
 Rails.application.config.assets.precompile += %w( prettyPhoto.scss.css )
 Rails.application.config.assets.precompile += %w( font-awesome.min.scss.css )
