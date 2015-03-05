@@ -40,7 +40,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # -- custom added gems --
 gem 'bootstrap-sass', '~> 3.3.3'
-gem 'sass-rails', '>= 3.2'
+#gem 'sass-rails', '>= 3.2'
 gem 'autoprefixer-rails'
 gem 'rails_12factor', group: :production
 gem 'newrelic_rpm' 
