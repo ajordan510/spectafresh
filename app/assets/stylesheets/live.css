@@ -1,0 +1,190 @@
+.stop_button_container{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.stop_button{
+	position: relative;
+	left: 40%;
+	width:20%;
+	background-color: red;
+	color: black;
+	font-weight: bold;
+	border-color: black;
+	border-radius: 10px;
+}
+video{
+	width: 70%;
+	position: relative;
+	left: 15%;
+	top: 0;
+}
+
+.performer-window{
+	height:500px;
+	width:100%;
+	background-color: black;
+	margin-bottom: 15px;
+}
+
+#openNewSessionButton{
+	cursor: pointer;
+}
+.round-button-container{
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	left: 37.5%;
+}
+.round-button {
+	width:25%;
+	
+}
+.round-button-circle {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #cfdcec;
+    overflow:hidden;
+    
+    background: #4679BD; 
+    box-shadow: 0 0 3px gray;
+}
+.round-button-circle:hover {
+	background:#30588e;
+}
+.round-button a {
+    display:block;
+	float:left;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+.br-custom-black{
+	background: rgba(0, 0, 0, 1.0) !important;
+
+}
+
+.slide-logo{
+	height: 200px;
+}
+
+.fancy-list{
+	list-style-type:none;
+	padding-left: 0;
+}
+
+#nominate-network{
+	height: 137px;
+	vertical-align: middle;
+	width:100%;
+	font-size: 20px;
+}
+.two-col-list{
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    padding-left: 10px;
+}
+.list-text-2{
+	margin-left: 5px;
+}
+
+#join-net{
+	margin-top: 10px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.list-text{
+	font-size: 15px;
+}
+
+.network_map{
+	width:100%;
+	margin-bottom: 20px;
+}
+.login-header{
+	text-align: right;
+}
+.login-header-text{
+	color: white;
+	padding-right: 5%;
+}
+
+#banner-button{
+	background-color: #0275d7 !important;
+}
+#body-link{
+	color: black;
+	font-weight: bold;
+}
+
+.slide2-back{
+	background-color: black !important;
+}
+p, h1, h2, h3, h4, h5, address{
+	color:white;
+}
+
+
+/* CARD FLIPPING CSS */
+.card {
+  position: relative;
+  float: left;
+  padding-bottom: 25%;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.6s;
+          transition: transform 0.6s;
+}
+
+.card__front {
+
+}
+
+.card__back {
+
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
