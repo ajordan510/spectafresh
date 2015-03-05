@@ -1,5 +1,9 @@
 == README
+
 RAILS_ENV=production bin/rake assets:precompile
+
+sudo service postgresql start
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
