@@ -1,5 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-
+.stop_button_container{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.stop_button{
+	position: relative;
+	left: 40%;
+	width:20%;
+	background-color: red;
+	color: black;
+	font-weight: bold;
+	border-color: black;
+	border-radius: 10px;
+}
 video{
 	width: 70%;
 	position: relative;

@@ -4,4 +4,6 @@ class LiveController < ApplicationController
   
   def performer
   end
+  
+  
 end

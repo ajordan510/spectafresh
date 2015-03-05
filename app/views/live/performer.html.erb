@@ -99,7 +99,7 @@
 		
 
 <script>
-	var connection = new RTCMultiConnection();
+	var connection = new RTCMultiConnection('test-channel');
 	
 	// easiest way to customize what you need!
 	connection.session = {
@@ -107,7 +107,7 @@
 	    video: true
 	};
 	
-	connection.direction = 'one-to-many';
+	connection.direction = 'one-way';
 	connection.body = document.querySelector('.performer-menu');
 	// on getting local or remote media stream
 	connection.onstream = function(e) {
@@ -115,15 +115,31 @@
 	};
 	
 	// setup signaling channel
-	connection.connect();
+	connection.connect('romm-id');
 
 	// open new session
 	document.querySelector('#openNewSessionButton').onclick = function() {
 	    connection.open();
 	    document.getElementById('broadcast-button').style.display = "none";
 	    document.getElementById('performer-window').style.backgroundColor = "inherit";
+	    var btn = document.createElement("BUTTON");
+	    var t = document.createTextNode("STOP SHOW");
+	    var dv = document.createElement("DIV");
+	    dv.className = "stop_button_container";
+	    dv.appendChild(btn);
+	    btn.appendChild(t);
+	    btn.className = "stop_button";
+	    btn.setAttribute('onclick','stop_show()');
+	    btn.setAttribute("id","stop_button");
+	    document.getElementById("performer-window").appendChild(dv);
 	};
-	
-	
+</script>
 
+<script>
+	function stop_show(){
+		connection.close();
+		document.getElementById('stop_button').style.display = 'none';
+		document.getElementById('broadcast-button').style.display = "inherit";
+		document.getElementById('performer-window').style.backgroundColor = "black";
+	}
 </script>
